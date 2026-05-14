@@ -10,9 +10,7 @@ from rosbags.highlevel import AnyReader
 from rosbags.typesys import Stores, get_typestore, get_types_from_msg
 
 
-# ============================================================
-# User-classified readable bags
-# ============================================================
+# readable bags
 
 BAG_INFO_USABLE = {
     "ett1": {
@@ -115,9 +113,7 @@ BAG_INFO_USABLE = {
 }
 
 
-# ============================================================
-# Custom Ackermann message registration
-# ============================================================
+#  Ackermann message registration
 
 ACKERMANN_DRIVE_MSG = """
 float32 steering_angle
@@ -154,9 +150,7 @@ def build_typestore():
     return typestore
 
 
-# ============================================================
-# Helpers
-# ============================================================
+
 
 def mkdir(path):
     path.mkdir(parents=True, exist_ok=True)
@@ -282,9 +276,7 @@ def count_button_rising_edges(button_array):
     return int(np.sum(np.diff(arr) == 1))
 
 
-# ============================================================
 # Bag analysis
-# ============================================================
 
 def analyze_bag(bag_dir, bag_info, typestore):
     metadata = load_metadata(bag_dir)
@@ -478,9 +470,7 @@ def analyze_bag(bag_dir, bag_info, typestore):
     return result, data
 
 
-# ============================================================
 # Plotting
-# ============================================================
 
 def plot_speed_steering(data, result, out_path):
     t = normalize_time(data["drive_t_ns"])
@@ -707,9 +697,7 @@ def plot_topic_availability(results, out_path):
     plt.close(fig)
 
 
-# ============================================================
 # Output files
-# ============================================================
 
 def write_summary_csv(results, out_path):
     fieldnames = [
@@ -825,9 +813,7 @@ def print_summary(results):
             print(f"  Error: {r['read_error']}")
 
 
-# ============================================================
 # Main
-# ============================================================
 
 def main():
     parser = argparse.ArgumentParser()
