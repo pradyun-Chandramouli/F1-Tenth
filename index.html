@@ -369,8 +369,8 @@
      ════════════════════════════════════════ -->
 <header>
   <div class="header-tag">ECE 484 · Spring 2026 · Midpoint Checkpoint</div>
-  <h1>Team [Name]<br/>Project [Title]</h1>
-  <p>Track: [Drone / F1-Tenth / GEM / GRAIC] &nbsp;·&nbsp; University of Illinois Urbana-Champaign</p>
+  <h1>Team eyuhh67<br/> Car 3</h1>
+  <p>Track:  F1-Tenth &nbsp;·&nbsp; University of Illinois Urbana-Champaign</p>
 </header>
 
 <!-- ════════════════
@@ -396,15 +396,16 @@
     <div class="section-label">01 / Overview</div>
     <h2>Project Overview</h2>
     <p>
-      Brief description of your project and goals. What problem are you solving?
-      What is the high-level approach? Replace this text with your own summary.
+      F1TENTH is a 1/10-scale autonomous racing platform where we develop real-time control algorithms 
+      using LiDAR for high-speed navigation. 
+      Our project focuses on implementing wall-following and reactive planning strategies to enable safe and efficient autonomous driving.
     </p>
     <div class="card">
       <h3>Milestone Status</h3>
       <ul>
-        <li>Milestone 1 — [Status]</li>
-        <li>Milestone 2 — [Status / In Progress]</li>
-        <li>Milestone 3 — [Status / Upcoming]</li>
+        <li>Milestone 1 — [Complete]</li>
+        <li>Milestone 2 — [In Progress]</li>
+        <li>Milestone 3 — [Upcoming]</li>
       </ul>
     </div>
   </section>
@@ -422,26 +423,24 @@
       Replace the .diagram-box below with:
         <img src="your-diagram.png" alt="Block diagram" style="width:100%; border-radius:6px; border:1px solid var(--border);">
     -->
-    <div class="diagram-box">
-      <span class="big-icon">⬡</span>
-      <span>Insert block diagram image here</span>
-      <span style="font-size:11px; opacity:0.6;">Replace this box with &lt;img src="diagram.png"&gt;</span>
-    </div>
+   <img src="assets/block-diagram.png" 
+     alt="Block diagram" 
+     style="width:100%; border-radius:6px; border:1px solid var(--border);">
 
     <div class="card">
       <h3>Sensor Inputs</h3>
       <ul>
-        <li>[Sensor 1] — e.g., LiDAR</li>
-        <li>[Sensor 2] — e.g., Camera</li>
-        <li>[Sensor 3] — e.g., IMU</li>
+        <li>[Sensor 1] — LiDAR</li>
+        <li>[Sensor 2] — Camera</li>
+        <li>[Sensor 3] — IMU</li>
       </ul>
     </div>
     <div class="card">
       <h3>Key Modules</h3>
       <ul>
-        <li>[Module 1] — e.g., Perception</li>
-        <li>[Module 2] — e.g., Planning</li>
-        <li>[Module 3] — e.g., Control</li>
+        <li>[Module 1] — Perception: Interprets sensor data to understand the environment</li>
+        <li>[Module 2] — Planning: Selects safe and efficient trajectories through the track</li>
+        <li>[Module 3] — Control: Executes motion through real-time steering and speed commands</li>
       </ul>
     </div>
   </section>
@@ -450,74 +449,58 @@
 
   <!-- ── SIMULATION VIDEOS ── -->
   <section id="simulation">
-    <div class="section-label">03 / Simulation</div>
-    <h2>Simulation Videos</h2>
-    <p>Videos demonstrating software progress in simulation.</p>
+  <div class="section-label">03 / Simulation</div>
+  <h2>Simulation Videos</h2>
+  <p>Videos demonstrating software progress in simulation.</p>
 
-    <div class="embed-note">
-      <span>How to add a YouTube video:</span> Replace the .video-placeholder div with:<br/>
-      &lt;iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen&gt;&lt;/iframe&gt;<br/><br/>
-      <span>How to add a local video file:</span><br/>
-      &lt;video src="sim_demo.mp4" controls&gt;&lt;/video&gt;
+  <div class="media-grid">
+
+    <!-- WEBM Video 1 -->
+    <div class="media-item">
+      <video src="assets/sim1.webm" controls autoplay loop muted></video>
+      <div class="media-caption">Simulation Demo 1</div>
     </div>
 
-    <div class="media-grid">
-
-      <!-- Video slot 1 — replace with real embed -->
-      <div class="media-item">
-        <div class="video-placeholder">
-          <div class="play-icon"></div>
-          <span>Simulation Demo 1</span>
-        </div>
-        <div class="media-caption">Caption: describe what this shows</div>
-      </div>
-
-      <!-- Video slot 2 — replace with real embed -->
-      <div class="media-item">
-        <div class="video-placeholder">
-          <div class="play-icon"></div>
-          <span>Simulation Demo 2</span>
-        </div>
-        <div class="media-caption">Caption: describe what this shows</div>
-      </div>
-
-      <!-- Add more slots by copying the block above -->
-
+    <!-- WEBM Video 2 -->
+    <div class="media-item">
+      <video src="assets/sim2.webm" controls autoplay loop muted></video>
+      <div class="media-caption">Simulation Demo 2</div>
     </div>
-  </section>
 
-  <hr/>
+    <!-- GIF -->
+    <div class="media-item">
+      <img src="assets/demo.gif" alt="Simulation GIF" />
+      <div class="media-caption">Navigation behavior demo</div>
+    </div>
+
+    <!-- PNG/JPEG -->
+    <div class="media-item">
+      <img src="assets/RVIZ.png" alt="Simulation Screenshot" />
+      <div class="media-caption">Simulation environment</div>
+    </div>
+
+  </div>
+</section>
+
+<hr/>
 
   <!-- ── HARDWARE VIDEOS ── -->
   <section id="hardware">
     <div class="section-label">04 / Hardware</div>
     <h2>Hardware Videos &amp; Photos</h2>
-    <p>Documentation of hardware testing at CSL Studio / Highbay, collected rosbags, and physical demos.</p>
+    <p>Documentation of hardware testing at CSL Studio, collected rosbags, and physical demos.</p>
 
     <div class="media-grid">
 
       <!-- Hardware video slot 1 -->
       <div class="media-item">
-        <div class="video-placeholder">
-          <div class="play-icon"></div>
-          <span>Hardware Demo 1</span>
-        </div>
+        <video controls autoplay loop muted playsinline>
+          <source src="assets/hardware_demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
         <div class="media-caption">Caption: e.g., Hover test — [date]</div>
       </div>
 
-      <!-- Hardware photo slot -->
-      <div class="media-item">
-        <!--
-          Replace image-placeholder with:
-          <img src="hardware_photo.jpg" alt="Hardware photo">
-        -->
-        <div class="image-placeholder">
-          <span class="img-icon">⬜</span>
-          <span>Hardware Photo</span>
-          <span style="font-size:10px; opacity:0.5;">Replace with &lt;img src="photo.jpg"&gt;</span>
-        </div>
-        <div class="media-caption">Caption: describe the setup</div>
-      </div>
 
       <!-- Add more as needed -->
 
@@ -527,71 +510,77 @@
   <hr/>
 
   <!-- ── METRICS ── -->
-  <section id="metrics">
-    <div class="section-label">05 / Metrics &amp; Results</div>
-    <h2>Performance Metrics</h2>
-    <p>Graphs and quantitative results from simulation and hardware testing.</p>
+<section id="metrics">
+  <div class="section-label">05 / Metrics &amp; Results</div>
+  <h2>Performance Metrics</h2>
+  <p>Graphs and quantitative results from simulation and hardware testing.</p>
 
-    <div class="embed-note">
-      <span>To add a graph image:</span> &lt;img src="metrics_graph.png" alt="Graph" style="width:100%; border-radius:4px;"&gt;
+  <div class="media-grid">
+
+    <!-- Trajectory -->
+    <div class="media-item">
+      <img src="assets/trajectory.png" style="width:100%; border-radius:6px;">
+      <div class="media-caption">
+        Vehicle trajectory across multiple laps. Shows consistency with minor deviations and off track noise.
+      </div>
     </div>
 
-    <div class="media-grid">
-
-      <div class="media-item">
-        <div class="image-placeholder" style="aspect-ratio: 16/9;">
-          <span class="img-icon">📈</span>
-          <span>Graph / Chart 1</span>
-        </div>
-        <div class="media-caption">Caption: metric name, axis labels, key takeaway</div>
+    <!-- LiDAR -->
+    <div class="media-item">
+      <img src="assets/lidar_scan.png" style="width:100%; border-radius:6px;">
+      <div class="media-caption">
+        2D LiDAR scan visualization showing wall boundaries and sensor noise distribution.
       </div>
-
-      <div class="media-item">
-        <div class="image-placeholder" style="aspect-ratio: 16/9;">
-          <span class="img-icon">📊</span>
-          <span>Graph / Chart 2</span>
-        </div>
-        <div class="media-caption">Caption: metric name, axis labels, key takeaway</div>
-      </div>
-
     </div>
-  </section>
 
-  <hr/>
+    <!-- Steering -->
+    <div class="media-item">
+      <img src="assets/steering.png" style="width:100%; border-radius:6px;">
+      <div class="media-caption">
+        Steering angle over time. Oscillations correspond to cornering and controller corrections.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr/>
 
   <!-- ── NEXT STEPS ── -->
-  <section id="next">
-    <div class="section-label">06 / Next Steps</div>
-    <h2>Remaining Semester Goals</h2>
-    <div class="card">
-      <h3>Upcoming Milestones</h3>
-      <ul>
-        <li>[Milestone / Task] — Target: [Week / Date]</li>
-        <li>[Milestone / Task] — Target: [Week / Date]</li>
-        <li>[Milestone / Task] — Target: [Week / Date]</li>
-        <li>[Milestone / Task] — Target: [Week / Date]</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Known Challenges</h3>
-      <ul>
-        <li>[Challenge 1]</li>
-        <li>[Challenge 2]</li>
-      </ul>
-    </div>
-  </section>
+<section id="next">
+  <div class="section-label">06 / Next Steps</div>
+  <h2>Remaining Semester Goals</h2>
 
-  <hr/>
+  <div class="card">
+    <h3>Upcoming Milestones</h3>
+    <ul>
+      <li>Integrate sensor fusion (LiDAR + RealSense) for robust state estimation </li>
+      <li>Implement and tune Model Predictive Control (MPC) for smoother trajectory tracking </li>
+      <li>Validate planning + control pipeline on physical track (lane following + obstacle handling) </li>
+      <li>Optimize speed and reliability for final race (minimize crashes and rescues) </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Known Challenges</h3>
+    <ul>
+      <li>Handling sensor noise and latency in real-time fusion (LiDAR + camera)</li>
+      <li>Maintaining stable control at high speeds, especially in sharp turns</li>
+      <li>Ensuring robustness to varying track conditions (lighting, lane width, obstacles)</li>
+      <li>Tuning MPC and PID parameters to balance speed vs. safety</li>
+    </ul>
+  </div>
+</section>
+
+<hr/>
 
   <!-- ── TEAM ── -->
   <section id="team">
-    <div class="section-label">07 / Team</div>
+    <div class="section-label">eyuhh67 / Team</div>
     <h2>Team Members</h2>
     <div class="members">
-      <div class="member-chip">Member Name</div>
-      <div class="member-chip">Member Name</div>
-      <div class="member-chip">Member Name</div>
-      <div class="member-chip">Member Name</div>
+      <div class="member-chip">Pradyun Chandramouli</div>
+      <div class="member-chip">Shashwath Thiyagarajan</div>
     </div>
   </section>
 

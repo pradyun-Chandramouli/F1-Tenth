@@ -1,0 +1,96 @@
+<table>
+  <thead>
+    <tr>
+      <th>Run</th>
+      <th>Algorithm</th>
+      <th>Status</th>
+      <th>Duration</th>
+      <th>Mean Speed</th>
+      <th>Max Speed</th>
+      <th>Mean |Steering|</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Early Direct EOH Run</td>
+      <td>Direct baseline EOH publishing directly to /ackermann_cmd</td>
+      <td>partial</td>
+      <td>57.9s</td>
+      <td>1.89 m/s</td>
+      <td>2.25 m/s</td>
+      <td>0.209 rad</td>
+      <td>This bag captured an early real-hardware EOH run using direct LiDAR-to-Ackermann control. It demonstrates the baseline reactive wall-balancing controller before later tuning.</td>
+    </tr>
+    <tr>
+      <td>Successful Real Track Run</td>
+      <td>Final or near-final EOH with steering-based speed cap</td>
+      <td>successful</td>
+      <td>58.4s</td>
+      <td>0.67 m/s</td>
+      <td>1.08 m/s</td>
+      <td>0.182 rad</td>
+      <td>This bag represents a successful real-track run using the tuned EOH controller. It provides strong evidence that the final reactive controller could complete the physical F1TENTH course.</td>
+    </tr>
+    <tr>
+      <td>Race Track Tuning Pass 2</td>
+      <td>Aggressive EOH race-speed tuning</td>
+      <td>failure</td>
+      <td>13.1s</td>
+      <td>0.94 m/s</td>
+      <td>1.25 m/s</td>
+      <td>0.040 rad</td>
+      <td>This run tested more aggressive race-speed settings and exposed cases where the car entered turns too quickly.</td>
+    </tr>
+    <tr>
+      <td>Race Track Tuning Pass 3</td>
+      <td>Aggressive EOH race-speed tuning with adjusted gates</td>
+      <td>partial</td>
+      <td>69.7s</td>
+      <td>0.93 m/s</td>
+      <td>5.00 m/s</td>
+      <td>0.101 rad</td>
+      <td>This bag captured a later race-track tuning attempt after speed gates were adjusted.</td>
+    </tr>
+    <tr>
+      <td>Scared Stop Debug 3</td>
+      <td>EOH tuning with modified steering sensitivity</td>
+      <td>debug</td>
+      <td>77.7s</td>
+      <td>0.45 m/s</td>
+      <td>0.85 m/s</td>
+      <td>0.098 rad</td>
+      <td>This bag tested steering sensitivity changes and helped reveal when the controller became too aggressive or unstable.</td>
+    </tr>
+    <tr>
+      <td>Scared Stop Debug 4</td>
+      <td>Stable EOH retest with crawl/stop threshold changes</td>
+      <td>debug</td>
+      <td>85.1s</td>
+      <td>0.43 m/s</td>
+      <td>1.12 m/s</td>
+      <td>0.119 rad</td>
+      <td>This run returned to a more stable EOH baseline and tested softer crawl behavior instead of hard stopping.</td>
+    </tr>
+    <tr>
+      <td>Improved EOH Turning Run</td>
+      <td>Improved EOH with earlier turn reaction</td>
+      <td>partial</td>
+      <td>142.2s</td>
+      <td>0.46 m/s</td>
+      <td>0.85 m/s</td>
+      <td>0.111 rad</td>
+      <td>This bag captured an improved EOH configuration that completed most of the track but still struggled with a tight turn.</td>
+    </tr>
+    <tr>
+      <td>Teleop Scan-Only Track Reference</td>
+      <td>Manual teleoperation, scan-only reference recording</td>
+      <td>teleop only</td>
+      <td>79.5s</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>This bag provides a manually driven scan reference of the physical track.</td>
+    </tr>
+  </tbody>
+</table>

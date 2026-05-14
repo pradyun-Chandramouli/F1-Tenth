@@ -1,0 +1,9 @@
+bag,display_name,duration_sec,metadata_message_count,drive_count,scan_count,joy_count,odom_count,mean_speed,mean_positive_speed,max_speed,mean_abs_steering,max_abs_steering,steering_smoothness_rad_per_sec,min_front_distance,mean_front_distance,pct_front_distance_below_0_50m,pct_front_distance_below_0_75m,joy_y_pressed_fraction,joy_y_press_count,has_odom
+ett1,Early EOH / Final Candidate,57.8784,12763,0,0,0,0,,,,,,,,,,,,,False
+real_track_1,Real Track Test,58.4128,5205,0,0,0,0,,,,,,,,,,,,,False
+rttp2,Race Track Test 2,13.0648,1546,0,0,0,0,,,,,,,,,,,,,False
+rttp3,Race Track Test 3,69.7430,9197,0,0,0,0,,,,,,,,,,,,,False
+success_please,Final Successful Run,287.8275,55587,0,0,0,0,,,,,,,,,,,,,False
+mpc_clean_test_1,MPC + Pure Pursuit Test 1,80.4873,10512,0,0,0,0,,,,,,,,,,,,,False
+mpc_clean_test_3,MPC + Pure Pursuit Test 3,57.2845,7259,0,0,0,0,,,,,,,,,,,,,False
+scared_stop_debug5,Conservative Stop Debug,142.2321,18607,0,0,0,0,,,,,,,,,,,,,False

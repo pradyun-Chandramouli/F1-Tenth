@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Project Title"
+  navbar:
+    background: light
+    left:
+      - text: "More Research"
+        menu:
+          - text: "Project 1"
+            href: https://example.com
+          - text: "Project 2"
+            href: https://example.com
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    page-layout: full
