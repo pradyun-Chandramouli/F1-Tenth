@@ -14,7 +14,7 @@ Your site won't go live until you flip this switch:
 4. Under **Source**, select **GitHub Actions** from the dropdown
 5. Click **Save**
 
-That's it, sfrom now on, every push to `main` will automatically build and publish your site. Your site URL will be:
+That's it, from now on, every push to `main` will automatically build and publish your site. Your site URL will be:
 
 ```
 https://<org-name>.github.io/<repo-name>/
